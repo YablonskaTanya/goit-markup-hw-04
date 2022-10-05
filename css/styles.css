@@ -156,6 +156,20 @@ display: flex;
 align-items: center;
 }
 
+/* .icon-mail::before{
+    content: "";
+    width: 16px;
+    height: 12px;
+    display: block;  
+    margin-right: 10px;
+    background-image: url(../images/smartphone.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  
+} */
+
+
 
 /* hero */
 
@@ -177,6 +191,16 @@ align-items: center;
     max-width: 693px;
     margin: 0 auto;
 
+}
+.overlay{
+    height: 600px;
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/overlay.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero .button{
@@ -204,7 +228,34 @@ align-items: center;
 
 /* Наші особливості */
 
+.section-list::before{
+    content: "";
+    display: block;
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px;
+}
+.section-list:nth-child(1)::before{
+    background-image: url(../images/antenna\ .svg);     
+}
 
+.section-list:nth-child(2)::before{
+    background-image: url(../images/clock\ .svg);
+}
+
+.section-list:nth-child(3)::before{
+    background-image: url(../images/diagram\ .svg);  
+}
+
+.section-list:nth-child(4)::before{
+    background-image: url(../images/astronaut\ .svg);  
+}
 
 .title {
     font-weight: 700;
@@ -248,7 +299,8 @@ align-items: center;
 /* Чим ми займаємося */
 
 .work-title,
-.team-title{
+.team-title,
+.client-title{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
@@ -317,6 +369,39 @@ align-items: center;
     display: block;
     max-width: 100%;
 }
+
+/* Постійні клієнти */
+
+
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    gap: 30px;
+
+}
+
+.icon-client{
+    display: flex;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.icon-client:hover,
+.icon-client:focus{
+border: 1px solid #2196F3;
+    border-radius: 4px;
+}
+
+
+
+
+
+
 
 
 /* Footer */

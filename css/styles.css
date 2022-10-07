@@ -20,6 +20,7 @@
     --primary-bg-color: #F5F5F5;
     --secondary-bg-color: #F5F4FA;
     --white-bg-color: #FFFFFF;
+    --hero-bg-color: #C4C4C4;
     --accent-bg-color: #2F303A;
     --button-bg-color: #F5F4FA;
     --button-accent: #2196F3;
@@ -179,7 +180,7 @@ h1,h2,h3,h4,h5,h6,p,ul{
 /* hero */
 
 .hero{
-    background-color: var(--accent-bg-color);
+    background-color: var(--hero-bg-color);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -198,7 +199,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
 
 }
 .overlay{
-    height: 600px;
     max-width: 1600px;
     margin-left: auto;
     margin-right: auto;
@@ -352,7 +352,6 @@ h1,h2,h3,h4,h5,h6,p,ul{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
     margin-top: 16px;
 }
 
@@ -376,7 +375,10 @@ h1,h2,h3,h4,h5,h6,p,ul{
     fill: var(--white-color-icon);
     background-color: var(--accent-text-color);
 }
-
+.social-list{
+    display: flex;
+        gap: 10px;
+}
 
 /* Постійні клієнти */
 
@@ -570,8 +572,10 @@ gap: 10px;
     border-bottom: 1px solid #EEEEEE;    
 }
 
-.list-card:hover {
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+.link-card:hover ,
+.link-card:focus{
+    display: block;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
 }
